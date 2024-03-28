@@ -1,4 +1,4 @@
-##Device App
+## Device App
 * There are operations available in the rest-api for **Device**:
   * POST
   * PATCH
@@ -10,7 +10,7 @@ Some rules have been assumed for creating a Device, they are:
 * There may be **Devices** with the same **Name**
 
 ### Dependencies
-* To start the environment, Docker and Docker Compose are required
+To start the environment, Docker and Docker Compose are required
 ### Run tests
 ``
 ./gradle test
