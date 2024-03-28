@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.device
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle_kotlin
+features: [ app-name, data, data-mongodb, gradle, http-client-test, java, java-application, jax-rs, jetty-server, junit, junit-platform-suite-engine, logback, micronaut-aot, micronaut-build, micronaut-http-validation, properties, readme, serialization-jackson, shade, static-resources, test-resources ]

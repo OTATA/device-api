@@ -1,0 +1,574 @@
+{
+	"info": {
+		"_postman_id": "1f1eb3f5-48b6-47a1-890a-518805d3844e",
+		"name": "Device Api",
+		"description": "Device API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1/devices",
+			"item": [
+				{
+					"name": "{externalKey}",
+					"item": [
+						{
+							"name": "find By External Key",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/devices/:externalKey",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"devices",
+										":externalKey"
+									],
+									"variable": [
+										{
+											"key": "externalKey",
+											"value": "urn:uuid:b3818f73-b3b4-c6f5-709a-79309086993e",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/devices/:externalKey",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"devices",
+												":externalKey"
+											],
+											"variable": [
+												{
+													"key": "externalKey",
+													"value": "urn:uuid:b3818f73-b3b4-c6f5-709a-79309086993e",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"brand\": \"in occaecat dolor eiusmod\",\n  \"createdAt\": \"2016-01-09T03:17:10.692Z\",\n  \"externalKey\": \"798545a1-e4eb-9585-da22-2e08201eae9c\",\n  \"name\": \"dolore dolore id\",\n  \"udpatedAt\": \"1948-11-19T02:42:31.508Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"brand\": \"ad nostrud in commodo\",\n  \"name\": \"Excepteur Duis occaecat\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/devices/:externalKey",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"devices",
+										":externalKey"
+									],
+									"variable": [
+										{
+											"key": "externalKey",
+											"value": "urn:uuid:b3818f73-b3b4-c6f5-709a-79309086993e",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK response",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"brand\": \"ad nostrud in commodo\",\n  \"name\": \"Excepteur Duis occaecat\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/devices/:externalKey",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"devices",
+												":externalKey"
+											],
+											"variable": [
+												{
+													"key": "externalKey",
+													"value": "urn:uuid:b3818f73-b3b4-c6f5-709a-79309086993e",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"brand\": \"in occaecat dolor eiusmod\",\n  \"createdAt\": \"2016-01-09T03:17:10.692Z\",\n  \"externalKey\": \"798545a1-e4eb-9585-da22-2e08201eae9c\",\n  \"name\": \"dolore dolore id\",\n  \"udpatedAt\": \"1948-11-19T02:42:31.508Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/devices/:externalKey",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"devices",
+										":externalKey"
+									],
+									"variable": [
+										{
+											"key": "externalKey",
+											"value": "urn:uuid:b3818f73-b3b4-c6f5-709a-79309086993e",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete 200 response",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/devices/:externalKey",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"devices",
+												":externalKey"
+											],
+											"variable": [
+												{
+													"key": "externalKey",
+													"value": "urn:uuid:b3818f73-b3b4-c6f5-709a-79309086993e",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"status\": 86171512,\n  \"statusInfo\": {\n    \"statusCode\": -11691364,\n    \"family\": \"OTHER\",\n    \"reasonPhrase\": \"nulla exercitation laboris ad\"\n  },\n  \"entity\": {},\n  \"mediaType\": {\n    \"parameters\": {\n      \"amet_0\": \"eu ea laborum ad ullamco\",\n      \"consequat74\": \"non officia aliqua\"\n    },\n    \"subtype\": \"esse occaecat in\",\n    \"type\": \"velit nulla\",\n    \"wildcardType\": false,\n    \"wildcardSubtype\": true\n  },\n  \"language\": {\n    \"country\": \"sit ea\",\n    \"language\": \"sed ex\",\n    \"variant\": \"commodo eu et sunt\",\n    \"script\": \"eiusmod est\",\n    \"extensionKeys\": [\n      \"mollit incididunt voluptate\",\n      \"ex fugiat\"\n    ],\n    \"unicodeLocaleAttributes\": [\n      \"tempor do fugiat consectetur cupidatat\",\n      \"in deserunt culpa\"\n    ],\n    \"unicodeLocaleKeys\": [\n      \"quis cupidatat\",\n      \"re\"\n    ],\n    \"baseLocale\": {\n      \"language\": \"fugiat eiusmod Lorem dolore\",\n      \"script\": \"culpa dolor officia minim esse\",\n      \"region\": \"eiusmod\",\n      \"variant\": \"amet deserunt\"\n    },\n    \"localeExtensions\": {\n      \"keys\": [\n        \"ad magna\",\n        \"do\"\n      ],\n      \"unicodeLocaleAttributes\": [\n        \"consectetur\",\n        \"consequat sit\"\n      ],\n      \"unicodeLocaleKeys\": [\n        \"aliquip consequat dolore minim\",\n        \"laboris Lo\"\n      ],\n      \"empty\": true,\n      \"ID\": \"Excepteur voluptate minim\"\n    },\n    \"ISO3Language\": \"eiusmod\",\n    \"ISO3Country\": \"incididunt sed irure deserunt\",\n    \"displayLanguage\": \"sed Ut\",\n    \"displayScript\": \"labore nostrud tempor Excepteur\",\n    \"displayCountry\": \"amet minim aliqua sit\",\n    \"displayVariant\": \"ex proident\",\n    \"displayName\": \"ullamco laborum in dolore\"\n  },\n  \"length\": 56525540,\n  \"allowedMethods\": [\n    \"aute exercitation esse proident culpa\",\n    \"velit amet\"\n  ],\n  \"cookies\": {\n    \"nisid7\": {\n      \"domain\": \"aute occaecat\",\n      \"name\": \"elit veniam adipisicing proident magna\",\n      \"path\": \"minim ex\",\n      \"value\": \"tempor eu veniam\",\n      \"version\": -83155088,\n      \"comment\": \"sunt dolor in\",\n      \"maxAge\": 35000812,\n      \"expiry\": \"1975-08-12T01:37:04.384Z\",\n      \"secure\": false,\n      \"httpOnly\": true,\n      \"sameSite\": \"STRICT\"\n    }\n  },\n  \"entityTag\": {\n    \"value\": \"ullamco voluptate\",\n    \"weak\": true\n  },\n  \"date\": \"2015-12-20T17:03:05.217Z\",\n  \"lastModified\": \"2001-10-06T20:05:14.187Z\",\n  \"location\": \"https://KPhQeIqbXSyCL.xbvtRwhlTaYsomzKoq9S5F7gfiRP,MGEZoX5noEotpeutFTd.oOloj\",\n  \"links\": [\n    {\n      \"uri\": \"https://bOaPxWzMMQlsPHIoejWAlh.umbe4Bq.WbzEqLW1ba5\",\n      \"uriBuilder\": {},\n      \"rel\": \"cillum nisi ullamco proident aliquip\",\n      \"rels\": [\n        \"nulla\",\n        \"proident in culpa voluptate\"\n      ],\n      \"title\": \"occaecat Duis Ut\",\n      \"type\": \"laborum irure\",\n      \"params\": {\n        \"irure6\": \"minim consequat officia ea deserunt\",\n        \"incididunt_58\": \"voluptate enim nostrud\"\n      }\n    },\n    {\n      \"uri\": \"http://rArSgFkVYmPvBhMbRUwuUQMIDfXK.ejwYqFUeK,XcadchJIHYK3SO3TacVHwhoRHG0w-gB1YEnfLh3NL2Q2eiOcd68Ns\",\n      \"uriBuilder\": {},\n      \"rel\": \"nisi ut sint mollit\",\n      \"rels\": [\n        \"ad culpa est\",\n        \"mollit nisi ex exercitation sunt\"\n      ],\n      \"title\": \"veniam incididunt\",\n      \"type\": \"ea\",\n      \"params\": {\n        \"dolore_87\": \"commodo dolore molli\",\n        \"ullamco77\": \"exercitation\"\n      }\n    }\n  ],\n  \"metadata\": {\n    \"cupidatat_0\": \"consectetur cillum\"\n  },\n  \"headers\": {\n    \"magna_6\": 52263886.20838258\n  },\n  \"stringHeaders\": {\n    \"inc\": \"voluptate reprehenderit\",\n    \"ea78\": \"nisi tempor Duis exercitation\"\n  },\n  \"closed\": false\n}"
+								}
+							]
+						},
+						{
+							"name": "partial Update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"brand\": \"ad nostrud in commodo\",\n  \"name\": \"Excepteur Duis occaecat\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/devices/:externalKey",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"devices",
+										":externalKey"
+									],
+									"variable": [
+										{
+											"key": "externalKey",
+											"value": "urn:uuid:b3818f73-b3b4-c6f5-709a-79309086993e",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK response",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"brand\": \"ad nostrud in commodo\",\n  \"name\": \"Excepteur Duis occaecat\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/devices/:externalKey",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"devices",
+												":externalKey"
+											],
+											"variable": [
+												{
+													"key": "externalKey",
+													"value": "urn:uuid:b3818f73-b3b4-c6f5-709a-79309086993e",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"brand\": \"in occaecat dolor eiusmod\",\n  \"createdAt\": \"2016-01-09T03:17:10.692Z\",\n  \"externalKey\": \"798545a1-e4eb-9585-da22-2e08201eae9c\",\n  \"name\": \"dolore dolore id\",\n  \"udpatedAt\": \"1948-11-19T02:42:31.508Z\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "find All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/v1/devices",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"devices"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/devices",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"devices"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"brand\": \"non quis\",\n    \"createdAt\": \"1974-04-27T04:18:07.953Z\",\n    \"externalKey\": \"0e336d76-7f46-d12e-457d-f409a6c6f89b\",\n    \"name\": \"ullamco tempor cillum\",\n    \"udpatedAt\": \"1987-02-06T12:53:19.656Z\"\n  },\n  {\n    \"brand\": \"Lorem in fugiat deserunt\",\n    \"createdAt\": \"2001-12-21T03:59:33.408Z\",\n    \"externalKey\": \"d7887e93-41d7-f5aa-9a25-fe65a394807e\",\n    \"name\": \"quis est ullamco\",\n    \"udpatedAt\": \"1989-03-31T23:47:28.252Z\"\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"brand\": \"ad nostrud in commodo\",\n  \"name\": \"Excepteur Duis occaecat\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/devices",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"devices"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"brand\": \"ad nostrud in commodo\",\n  \"name\": \"Excepteur Duis occaecat\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/devices",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"devices"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"brand\": \"in occaecat dolor eiusmod\",\n  \"createdAt\": \"2016-01-09T03:17:10.692Z\",\n  \"externalKey\": \"798545a1-e4eb-9585-da22-2e08201eae9c\",\n  \"name\": \"dolore dolore id\",\n  \"udpatedAt\": \"1948-11-19T02:42:31.508Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "find By Brand",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/v1/devices/brands/:name",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"devices",
+								"brands",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": "adipisicing aliquip Duis",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/devices/brands/:name",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"devices",
+										"brands",
+										":name"
+									],
+									"variable": [
+										{
+											"key": "name",
+											"value": "adipisicing aliquip Duis",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"brand\": \"non quis\",\n    \"createdAt\": \"1974-04-27T04:18:07.953Z\",\n    \"externalKey\": \"0e336d76-7f46-d12e-457d-f409a6c6f89b\",\n    \"name\": \"ullamco tempor cillum\",\n    \"udpatedAt\": \"1987-02-06T12:53:19.656Z\"\n  },\n  {\n    \"brand\": \"Lorem in fugiat deserunt\",\n    \"createdAt\": \"2001-12-21T03:59:33.408Z\",\n    \"externalKey\": \"d7887e93-41d7-f5aa-9a25-fe65a394807e\",\n    \"name\": \"quis est ullamco\",\n    \"udpatedAt\": \"1989-03-31T23:47:28.252Z\"\n  }\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}

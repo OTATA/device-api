@@ -1,0 +1,36 @@
+version: '2.1'
+
+services:
+  device_app:
+    container_name: device_app
+    build: .
+    depends_on:
+      mongo_db:
+        condition: service_started
+    links:
+      - mongo_db
+    environment:
+      HOST: mongo_db
+    networks:
+      database: { }
+    ports:
+      - 8080:8080
+  mongo_db:
+    image: mongo
+    container_name: device_db
+    restart: always
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: rootpass
+      MONGO_INITDB_DATABASE: test
+    ports:
+      - 27017:27017
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    networks:
+      database: { }
+networks:
+  database:
